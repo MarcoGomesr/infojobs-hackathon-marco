@@ -1,8 +1,5 @@
 Sign in with your infojobs account and analize your experiences. Also you can write in the input and then analize it.
 
-![Login page](./docs/images/login.png)
-
-
 ## Getting Started
 
 First copy env sample file and set the enviroments
