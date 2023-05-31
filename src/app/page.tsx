@@ -1,7 +1,7 @@
 'use client'
 
 import { signIn } from 'next-auth/react'
-export default function Home () {
+export default function IndexPage () {
   return (
     <main className='flex flex-col items-center justify-around md:flex-row'>
       <section className='w-full mt-4'>
@@ -9,7 +9,7 @@ export default function Home () {
           <button
             onClick={(e) => {
               e.preventDefault()
-              signIn('infojobs', { callbackUrl: '/resume' }).catch(console.error)
+              signIn('infojobs', { callbackUrl: '/resume' })
             }}
             className='flex flex-row rounded-lg bg-[#2088c2] px-5 py-2 text-white items-center hover:bg-[#16628b]'
           >
