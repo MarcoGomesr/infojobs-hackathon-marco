@@ -24,7 +24,14 @@ export default function RootLayout({
     <>
      <html lang='en'>      
         <body className={montserrat.className}>
-          <StyledComponentsRegistry>           
+          <StyledComponentsRegistry>
+            <header className='py-10'>
+              <h1 className='flex flex-col items-center justify-center text-4x'>
+                <Logo />
+                <strong> Autocomplete CV with AI </strong>
+              </h1>
+            </header>
+            
             {children}
           </StyledComponentsRegistry>
         </body>
