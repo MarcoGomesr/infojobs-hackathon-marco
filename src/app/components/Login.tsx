@@ -22,7 +22,7 @@ return (
           onClick={(e) => {
             e.preventDefault()
             // signIn('infojobs', { callbackUrl: '/resume' })
-            async () => await signIn('infojobs')
+            signIn('infojobs')
           }}
           className='flex flex-row rounded-lg bg-[#2088c2] px-5 py-2 text-white items-center hover:bg-[#16628b]'
         >
