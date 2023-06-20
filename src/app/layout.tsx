@@ -1,9 +1,10 @@
 import './globals.css'
 
-import StyledComponentsRegistry from "@/lib/registry";
+// import StyledComponentsRegistry from "@/lib/registry";
 import { Montserrat } from "next/font/google";
-import { Logo } from './components/Logo'
 
+
+import { AuthProvider } from './components/Auth-provider'
 
 export const metadata = {
   title: 'Inbojobs - Autocomplete CV with AI',
@@ -24,16 +25,9 @@ export default function RootLayout({
     <>
      <html lang='en'>      
         <body className={montserrat.className}>
-          <StyledComponentsRegistry>
-            <header className='py-10'>
-              <h1 className='flex flex-col items-center justify-center text-4x'>
-                <Logo />
-                <strong> Autocomplete CV with AI </strong>
-              </h1>
-            </header>
-            
-            {children}
-          </StyledComponentsRegistry>
+            <AuthProvider>
+              {children}
+            </AuthProvider>
         </body>
     </html>
       
