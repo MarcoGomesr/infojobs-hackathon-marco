@@ -3,7 +3,8 @@ import { signIn, useSession, signOut } from 'next-auth/react'
 export default function Login() {
 
 const { data: session, status } = useSession()
-console.log(session, status)
+console.log({session})
+console.log({status})
 
 return (
   <main className='flex flex-col items-center justify-around md:flex-row'>
